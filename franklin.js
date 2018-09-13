@@ -32,6 +32,7 @@ javascript:(function(){
         <option value='Bra jobbat! '>Bra jobbat!</option>\
         <option value='Härligt att du gjort extrauppgifterna! '>Extrauppgifter ok</option>\
         <option value='Vänligen komplettera följande: '>Komplettering</option>\
+        <option value='Jobba mer med din redovisningstext till nästa inlämning, i länken nedanför kan du läsa om vad tanken är med texten.'>Bättre redovisningstext</option>\
         </select>\
         <select id='names'>\
         <option value=''>Vem är du?</option>\
