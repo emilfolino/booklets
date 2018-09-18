@@ -41,6 +41,12 @@ javascript:(function(){
         <option value='Andreas'>Andreas</option>\
         <option value='Emil'>Emil</option>\
         <option value='Mikael'>Mikael</option>\
+        <option value='Bäck'>Bäck</option>\
+        <option value='Jesper'>Jesper</option>\
+        <option value='Matilda'>Matilda</option>\
+        <option value='Martin'>Martin</option>\
+        <option value='Magnus'>Magnus</option>\
+        <option value='Niklas'>Niklas</option>\
         </select></div>";
 
         document.getElementsByTagName("body")[0].appendChild(workingDiv);
