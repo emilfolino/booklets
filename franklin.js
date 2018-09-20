@@ -1,6 +1,6 @@
 javascript:(function(){
     let myStorage = window.localStorage;
-    let users = ["Kenneth", "Andreas", "Emil", "Mikael"];
+    let users = ["Kenneth", "Andreas", "Emil", "Mikael", "Bäck", "Matilda", "Jesper", "Martin", "Magnus", "Niklas"];
     let box = document.getElementsByClassName("ic-Input grading_comment")[0];
     box.rows = 30;
     let course = document.getElementsByClassName("ellipsible")[1].innerHTML.toLowerCase();
