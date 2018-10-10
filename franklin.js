@@ -30,7 +30,7 @@ javascript:(function(){
         <option value=''>Välj någon feedback...</option>\
         <option value='Jag har tittat på din inlämning och alla delarna ser bra ut. '>htmlphp 01 (intro)</option>\
         <option value='Jag har gått igenom labben och me-sidan och '>htmlphp 02 (intro)</option>\
-        <option value='Jag har tittat på din inlämning och alla delarna finns på plats och fungerar som det ska. '>htmlphp 04 (intro)</option>\
+        <option value='Jag har tittat på din inlämning och alla delarna finns på plats och fungerar som det ska. Din redovisiningstext är välskriven och reflekterande. Snyggt jobbat! '>htmlphp 04 (intro)</option>\
         <option value='Bra jobbat! '>Bra jobbat!</option>\
         <option value='Härligt att du gjort extrauppgifterna! '>Extrauppgifter ok</option>\
         <option value='Vänligen komplettera följande: '>Komplettering</option>\
