@@ -1,6 +1,6 @@
 javascript:(function(){
     let myStorage = window.localStorage;
-    let users = ["Kenneth", "Andreas", "Emil", "Mikael"];
+    let users = ["Kenneth", "Andreas", "Emil", "Mikael", "Bäck", "Matilda", "Jesper", "Martin", "Magnus", "Niklas"];
     let box = document.getElementsByClassName("ic-Input grading_comment")[0];
     box.rows = 30;
     let course = document.getElementsByClassName("ellipsible")[1].innerHTML.toLowerCase();
@@ -28,7 +28,11 @@ javascript:(function(){
         <button id='pressMePlease' style='height:40px;background:#eee;'>INSERT FEEDBACK</button>\
         <select id='preChoices'>\
         <option value=''>Välj någon feedback...</option>\
-        <option value='Jag har tittat på din inlämning och alla delarna ser bra ut. '>Intro 1 (Bra)</option>\
+        <option value='Jag har tittat på din inlämning och alla delarna ser bra ut. '>htmlphp 01 (intro)</option>\
+        <option value='Jag har gått igenom labben och me-sidan och '>htmlphp 02 (intro)</option>\
+        <option value='Jag har tittat på din inlämning och alla delarna finns på plats och fungerar som det ska. Din redovisningstext är välskriven och reflekterande. Snyggt jobbat! '>htmlphp 04 (intro)</option>\
+        <option value='Jag har tittat på uppgifterna och både labben och sökfunktionen fungerar fint. Bra redovisningstext så det är bara att köra på!'>htmlphp 05 (intro)</option>\
+        <option value='Din redovisingstext är välskriven och reflekterande. '>Bra redovisningtext</option>\
         <option value='Bra jobbat! '>Bra jobbat!</option>\
         <option value='Härligt att du gjort extrauppgifterna! '>Extrauppgifter ok</option>\
         <option value='Vänligen komplettera följande: '>Komplettering</option>\
@@ -40,6 +44,12 @@ javascript:(function(){
         <option value='Andreas'>Andreas</option>\
         <option value='Emil'>Emil</option>\
         <option value='Mikael'>Mikael</option>\
+        <option value='Bäck'>Bäck</option>\
+        <option value='Jesper'>Jesper</option>\
+        <option value='Matilda'>Matilda</option>\
+        <option value='Martin'>Martin</option>\
+        <option value='Magnus'>Magnus</option>\
+        <option value='Niklas'>Niklas</option>\
         </select></div>";
 
         document.getElementsByTagName("body")[0].appendChild(workingDiv);
@@ -69,7 +79,5 @@ javascript:(function(){
         });
     });
 
-
-
-    console.log("Go fuck yourself, Andreas!");
+    console.log("Ready to serve.");
 })();
