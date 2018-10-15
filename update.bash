@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-git pull
+git pull > /dev/null 2>&1
 
-print "HTTP/1.0 200 OK"
-print "Content-type: text/plain"
-print ""
+echo "HTTP/1.0 200 OK"
+echo "Content-type: text/plain"
+echo ""
