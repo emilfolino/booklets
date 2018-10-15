@@ -2,4 +2,6 @@
 
 git pull
 
-echo "ok"
+print "HTTP/1.0 200 OK"
+print "Content-type: text/plain"
+print ""
