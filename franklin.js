@@ -39,6 +39,7 @@ javascript:(function(){
         <option value='Vänligen komplettera följande: '>Komplettering</option>\
         <option value='Jobba mer med din redovisningstext till nästa inlämning, i länken nedanför kan du läsa om vad tanken är med texten.'>Bättre redovisningstext</option>\
         <option value='Allt fungerar som tänkt, bra jobbat!'>Allt fungerar</option>\
+        <option value='Din inlämning visar på en bra förståelse på skillnaden mellan de olika datastrukturerna. Den är även enligt specikationen och fungerar som det ska. Bra jobbat och lyckat till med examinationen.'>Kmom06 (python)</option>\
         </select>\
         <select id='names'>\
         <option value=''>Vem är du?</option>\
