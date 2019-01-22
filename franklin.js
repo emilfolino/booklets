@@ -44,6 +44,7 @@ javascript:(function(){
         <option value='Jobba mer med din redovisningstext till nästa inlämning, i länken nedanför kan du läsa om vad tanken är med texten.'>Bättre redovisningstext</option>\
         <option value='Allt fungerar som tänkt, bra jobbat!'>Allt fungerar</option>\
         <option value='Din inlämning visar på en bra förståelse på skillnaden mellan de olika datastrukturerna. Den är även enligt specikationen och fungerar som det ska. Bra jobbat och lyckat till med examinationen.'>Kmom06 (python)</option>\
+        <option value='Dina klasser är strukturerade korrekt och du verkar förstå hur klasser och objekt fungerar.'>kmom01 (oopython)</option>\
         </select>\
         <select id='names'>\
         <option value=''>Vem är du?</option>\
