@@ -28,16 +28,24 @@ javascript:(function(){
         <button id='pressMePlease' style='height:40px;background:#eee;'>INSERT FEEDBACK</button>\
         <select id='preChoices'>\
         <option value=''>Välj någon feedback...</option>\
+        <option value='Jag har gått igenom din inlämning och tittat på labben, sandboxen och din me-sida. Alla delarna fungerar fint och enligt kraven. Kör på med nästa moment!'>js1 01 (intro)</option>\
+        <option value='Jag har testat de olika tangenbordsinmatningarna och allt ser bara bra ut. Din text är reflekterande och väl skriven. Kör så det ryker med nästa kursmoment!'>js1 05</option>\
+        <option value='Jag har spelat ditt Hangman och det fungerar fint. Alla delarna är på plats och rätt metoder är publika. Mycket bra jobbat! Kämpa på nu och lycka till med projektet.'>js1 06</option>\
+        <option value='Jag har tittat på ditt projekt och bra jobbat med kraven och implementationen! Projektet fungerar och koden validerar, Din redovisningstext är reflekterande och väl skriven, stiligt!'>js1 10</option>\
+        <option value='Jag har tittat på din inlämning och alla delarna är på plats. Loggen innehåller rätt data och skärmdumpen visar vad som tänkts. Även me-sidan är på plats. Bra jobbat och kör på med nästa kursmoment!'>Linux 01</option>\
         <option value='Jag har tittat på din inlämning och alla delarna ser bra ut. '>htmlphp 01 (intro)</option>\
         <option value='Jag har gått igenom labben och me-sidan och '>htmlphp 02 (intro)</option>\
         <option value='Jag har tittat på din inlämning och alla delarna finns på plats och fungerar som det ska. Din redovisningstext är välskriven och reflekterande. Snyggt jobbat! '>htmlphp 04 (intro)</option>\
         <option value='Jag har tittat på uppgifterna och både labben och sökfunktionen fungerar fint. Bra redovisningstext så det är bara att köra på!'>htmlphp 05 (intro)</option>\
+        <option value='Jag har gått igenom CRUD och labben. Uppgiften är väl utförd och fungerar i enlighet med kraven. Jag har även läst din redovisningstext och den beskriver bra hur du resonerat genom kursmomentet. Kör på och lycka till med projeket!'>htmlphp 06 (intro)</option>\
         <option value='Din redovisingstext är välskriven och reflekterande. '>Bra redovisningtext</option>\
         <option value='Bra jobbat! '>Bra jobbat!</option>\
         <option value='Härligt att du gjort extrauppgifterna! '>Extrauppgifter ok</option>\
         <option value='Vänligen komplettera följande: '>Komplettering</option>\
         <option value='Jobba mer med din redovisningstext till nästa inlämning, i länken nedanför kan du läsa om vad tanken är med texten.'>Bättre redovisningstext</option>\
         <option value='Allt fungerar som tänkt, bra jobbat!'>Allt fungerar</option>\
+        <option value='Din inlämning visar på en bra förståelse på skillnaden mellan de olika datastrukturerna. Den är även enligt specikationen och fungerar som det ska. Bra jobbat och lyckat till med examinationen.'>Kmom06 (python)</option>\
+        <option value='Dina klasser ser bra och korrekta ut. Efter att ha läst din redovisningstext och kollat på din kod känns det som att veta vad klasser och objekt är. Bra jobbat!.'>kmom01 (oopython)</option>\
         </select>\
         <select id='names'>\
         <option value=''>Vem är du?</option>\
