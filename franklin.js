@@ -3,7 +3,7 @@ javascript:(function(){
     let users = ["Kenneth", "Andreas", "Emil", "Mikael", "Bäck", "Matilda", "Jesper", "Martin", "Magnus", "Niklas"];
     let box = document.getElementsByClassName("ic-Input grading_comment")[0];
     box.rows = 30;
-    let course = document.getElementsByClassName("ellipsible")[1].innerHTML.toLowerCase();
+    let course = document.getElementsByClassName("ellipsible")[1].innerHTML.toLowerCase().replace("/", "");
     let kmom = document.getElementsByClassName("ellipsible")[3].innerHTML.toLowerCase();
 
     fetch('https://franklin.emilfolino.se/feedback/' + course + "/" + kmom)
