@@ -1,3 +1,3 @@
 javascript:(function(){
-    console.log("Go fuck yourself, Andreas!");
+    console.log("Something nice");
 })();
