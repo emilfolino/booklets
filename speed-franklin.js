@@ -1,8 +1,7 @@
 javascript:(function(){
     let myStorage = window.localStorage;
     let users = ["Kenneth", "Andreas", "Emil", "Mikael", "Bäck", "Matilda", "Jesper", "Martin", "Magnus", "Niklas"];
-    let box = document.getElementById("speed_grader_comment_textarea");
-    box.rows = 30;
+    let box = document.getElementById("speed_grader_comment_textarea");   
     let course = document.getElementById("context_title").textContent.toLowerCase().replace("/", "");
     let kmom = document.getElementById("assignment_url").children[0].textContent.toLowerCase();
 
@@ -81,8 +80,11 @@ javascript:(function(){
                 feedback += document.getElementById("feedbackText").value + "\n";
 
                 let textToBeAdded = textBefore + feedback + textAfter + myStorage.getItem("name");
+                
                 box.textContent = textToBeAdded;
                 box.value = textToBeAdded;
+                box.style.height = "700px";
+
                 document.getElementsByTagName("body")[0].removeChild(workingDiv);
             } else {
                 window.alert("Vem är det som rättar?");
