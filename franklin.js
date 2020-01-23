@@ -51,6 +51,7 @@ javascript:(function(){
         <option value='Allt fungerar som tänkt, bra jobbat!'>Allt fungerar</option>\
         <option value='Din inlämning visar på en bra förståelse på skillnaden mellan de olika datastrukturerna. Den är även enligt specikationen och fungerar som det ska. Bra jobbat och lyckat till med examinationen.'>Kmom06 (python)</option>\
         <option value='Dina klasser ser bra och korrekta ut. Efter att ha läst din redovisningstext och kollat på din kod känns det som att veta vad klasser och objekt är. Bra jobbat!.'>kmom01 (oopython)</option>\
+        <option value='Jag har inspekterat dina klasser och labben. Klasserna ser ut som det är tänkt. Du har en bra förklaring på klasser och objekt, det ser ut som att du förstår klasser och objekt.'>kmom01 (oopython) alt. 2</option>\
         </select>\
         <select id='names'>\
         <option value=''>Vem är du?</option>\
