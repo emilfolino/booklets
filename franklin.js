@@ -55,6 +55,7 @@ javascript:(function(){
         <option value='Jag har tittat på labben och Flask-applikationen och läst igenom din redovisningstext. Det verkar som om du har koll på klasser och objekt! Din Flaskapplikation snurrar också på fint med korrekt innehåll enligt instruktionerna. Bra jobbat - kör på med nästa kursmoment!'>kmom01 (oopython) alt. 3</option>\
         <option value='Labben ser bra ut och frågersporten fungerar som den ska. Koden och klasserna är bra gjorda, du har uttnytja arv på rätt sätt och inte skapat onödiga metoder i Question klasserna. Bra förklaringar av de olika koncepten i redovisningtexten. '>kmom02 (oopython)</option>\
         <option value='Du har bra struktur i din kod och använder dina klasser på ett bra sätt. War klassen kunde haft mer metoder och inte bara en stor. Din tester kunde varit lite mer utförliga och även testat vad som händer när något går fel. Klassdiagrammet ser bra ut.'>kmom03 (oopython)</option>\
+        <option value='Koden för båda insertionsort ser bra ut, inget att kommentera på. Din redovisningstext visar på att du förstår vad du har gjort i kursmomentet, bra jobbat!'>kmom05 (oopython)</option>\
         </select>\
         <select id='names'>\
         <option value=''>Vem är du?</option>\
