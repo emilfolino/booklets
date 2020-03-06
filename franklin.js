@@ -56,6 +56,7 @@ javascript:(function(){
         <option value='Labben ser bra ut och frågersporten fungerar som den ska. Koden och klasserna är bra gjorda, du har uttnytja arv på rätt sätt och inte skapat onödiga metoder i Question klasserna. Bra förklaringar av de olika koncepten i redovisningtexten. '>kmom02 (oopython)</option>\
         <option value='Du har bra struktur i din kod och använder dina klasser på ett bra sätt. War klassen kunde haft mer metoder och inte bara en stor. Din tester kunde varit lite mer utförliga och även testat vad som händer när något går fel. Klassdiagrammet ser bra ut.'>kmom03 (oopython)</option>\
         <option value='Koden för båda insertionsort ser bra ut, inget att kommentera på. Din redovisningstext visar på att du förstår vad du har gjort i kursmomentet, bra jobbat!'>kmom05 (oopython)</option>\
+        <option value='Bra att du gjorde labben. Get() ser bra ut, inget att påpeka. Du använder rekursion korrekt. Remove() får ju det gjort men du hade kunnat dela upp den i fler metoder eller ännu bättre hade varit att försöka identifiera  funktionalitet som är lika mellan flera fall och bryta ut det till en egen metod och återanvänt den. Du förklara de olika begreppen väldigt bra och visar att du förstår de olika koncepten. Bra jämförelse mellan datastrukturerna.'>kmom06 (oopython)</option>\ 
         </select>\
         <select id='names'>\
         <option value=''>Vem är du?</option>\
