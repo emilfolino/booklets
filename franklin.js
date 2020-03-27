@@ -57,7 +57,7 @@ javascript:(function(){
         <option value='Du har bra struktur i din kod och använder dina klasser på ett bra sätt. War klassen kunde haft mer metoder och inte bara en stor. Din tester kunde varit lite mer utförliga och även testat vad som händer när något går fel. Klassdiagrammet ser bra ut.'>kmom03 (oopython)</option>\
         <option value='Koden för båda insertionsort ser bra ut, inget att kommentera på. Din redovisningstext visar på att du förstår vad du har gjort i kursmomentet, bra jobbat!'>kmom05 (oopython)</option>\
         <option value='Bra att du gjorde labben. Get() ser bra ut, inget att påpeka. Du använder rekursion korrekt. Remove() får ju det gjort men du hade kunnat dela upp den i fler metoder eller ännu bättre hade varit att försöka identifiera  funktionalitet som är lika mellan flera fall och bryta ut det till en egen metod och återanvänt den. Du förklara de olika begreppen väldigt bra och visar att du förstår de olika koncepten. Bra jämförelse mellan datastrukturerna.'>kmom06 (oopython)</option>\
-        <option value='Bra jobbat med projektet! Efter läst din text och kollat igenom din video känns det som du behärskar klasser, datastrukturer och att arbeta rekursivt.'>kmom10 (oopython)</option>\
+        <option value='Bra jobbat med projektet! Efter läst din text, kod och kollat igenom din video känns det som du behärskar klasser, datastrukturer och att arbeta rekursivt.\nDin kod ser väldigt bra, bra udelning av metoder.\nDina tester var även bra skrivna.\n\nKul att du gillade kursen och projektet, lyckat till med nästa läsperiod.'>kmom10 (oopython)</option>\
         </select>\
         <select id='names'>\
         <option value=''>Vem är du?</option>\
