@@ -1,6 +1,6 @@
 javascript:(function(){
     let myStorage = window.localStorage;
-    let users = ["Kenneth", "Andreas", "Emil", "Mikael", "Matilda", "Martin B", "Niklas", "Jakob", "Alexander", "Wissam", "Martin L"];
+    let users = ["Kenneth", "Andreas", "Emil", "Mikael", "Martin B", "Niklas", "Wissam", "Martin L", "Gustav", "Abbe", "Simon", "Johannes", "Anthony", "Mathilda", "Sandra", "Ida"];
     let usersSelect = users.map(function(user) {
         return `<option value="${user}">${user}</option>`;
     });
