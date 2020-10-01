@@ -45,7 +45,7 @@ javascript:(function(){
         <option value='Jag har gått igenom CRUD och labben. Uppgiften är väl utförd och fungerar i enlighet med kraven. Jag har även läst din redovisningstext och den beskriver bra hur du resonerat genom kursmomentet. Kör på och lycka till med projeket!'>htmlphp 06 (intro)</option>\
         <option value='Jag har kikat igenom ditt kursmoment och allt fungerar som det skall. Bra jobbat med extra uppgifterna i labben. Plane-koden är fin och det är bra att du har börjat med kommentarer.\n\nKör på och lycka till i nästa kmom!'>python 01</option>\
         <option value='Jag har tittat på din inlämning och allt fungerar klockrent!\nSamtliga menyval fungerar enligt kraven och allt går igenom valideringen.'>python 02</option>\
-        <option value='Bra jobbat med inv-kommandona, det fungerar enligt kraven.\nDin marvin kod ser bra ut, bra felhantering. Inget att kommentera på.'>python 03</option>\
+        <option value='Hej, dags för kmom03, nästan halvvägs klar med kursen.\n\nJag har gått igenom din inlämning, tittat igenom din labb och Marvins nya ryggsäck.\nAlla delarna fungerar fint och enligt kraven. Härligt att du även gjorde extrauppgifterna, lösningarna ser bra ut.'>python 03</option>\
         <option value='Din redovisingstext är välskriven och reflekterande. '>Bra redovisningtext</option>\
         <option value='Bra jobbat! '>Bra jobbat!</option>\
         <option value='Härligt att du gjort extrauppgifterna! '>Extrauppgifter ok</option>\
