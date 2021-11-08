@@ -8,7 +8,7 @@ javascript:(function(){
     let box = document.getElementsByClassName("ic-Input grading_comment")[0];
     box.rows = 30;
     let course = document.getElementsByClassName("ellipsible")[1].innerHTML.toLowerCase().replace("/", "");
-    let kmom = document.getElementsByClassName("ellipsible")[3].innerHTML.toLowerCase();
+    let kmom = document.getElementsByClassName("ellipsible")[3].innerHTML.toLowerCase().strip(" ")[0];
 
     fetch('https://franklin.emilfolino.se/feedback/' + course + "/" + kmom)
     .then(function(response) {
