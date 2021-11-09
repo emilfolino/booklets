@@ -1,13 +1,13 @@
 javascript:(function(){
     let myStorage = window.localStorage;
-    let users = ["Kenneth", "Andreas", "Emil", "Mikael", "Martin B", "Niklas", "Wissam", "Martin L", "Gustav", "Abbe", "Simon", "Johannes", "Anthony", "Mathilda", "Sandra", "Ida"];
+    let users = ["Kenneth", "Andreas", "Emil", "Mikael", "Marie", "Gustav", "Abbe", "Simon", "Johannes", "Anthony", "Mathilda", "Sandra", "Ida", "Malin", "Oliver", "Jesper", "Areon", "Jonatan", "Malcolm", "Robert"];
     let usersSelect = users.map(function(user) {
         return `<option value="${user}">${user}</option>`;
     });
 
     let box = document.getElementById("speed_grader_comment_textarea");
     let course = document.getElementById("context_title").textContent.toLowerCase().replace("/", "");
-    let kmom = document.getElementById("assignment_url").children[0].textContent.toLowerCase();
+    let kmom = document.getElementById("assignment_url").children[0].textContent.toLowerCase().split(" ")[0];
 
     fetch('https://franklin.emilfolino.se/feedback/' + course + "/" + kmom)
     .then(function(response) {
