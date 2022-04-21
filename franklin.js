@@ -85,7 +85,9 @@ javascript:(function(){
         document.getElementById("pressMePlease").addEventListener("click", function() {
             if (users.indexOf(myStorage.getItem("name")) > -1) {
                 feedback += document.getElementById("feedbackText").value + "\n";
-                box.textContent = textBefore + feedback + textAfter + myStorage.getItem("name");
+                let content = textBefore + feedback + textAfter + myStorage.getItem("name");
+                navigator.clipboard.writeText(content);
+                box.textContent = content;
                 document.getElementsByTagName("body")[0].removeChild(workingDiv);
             } else {
                 window.alert("Vem är det som rättar?");
