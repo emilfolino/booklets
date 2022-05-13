@@ -27,6 +27,16 @@ function renderBox(assignments) {
 
     box.style = "width:600px;height:800px;overflow:scroll;position:absolute;top:50px;left:20px;background-color:#2C3539;color:#fff;padding:10px;";
 
+    let button = document.createElement("button");
+
+    button.textContent = "Stäng";
+
+    button.addEventListener("click", function() {
+        box.parentNode.removeChild(box);
+    });
+
+    box.appendChild(button);
+
     assignments.forEach(function(assignment, index) {
         let assignmentElement = document.createElement("div");
 
