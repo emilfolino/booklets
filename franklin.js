@@ -1,7 +1,7 @@
-javascript:(function(){
+javascript: (function () {
     let myStorage = window.localStorage;
-    let users = ["Kenneth", "Andreas", "Emil F", "Mikael", "Marie", "Simon", "Mathilda", "Malin", "Eddie", "Agnes", "John", "Alexander", "Vincent", "Wilhelm", "Emmie", "Emil G", "Milena"];
-    let usersSelect = users.map(function(user) {
+    let users = ["Kenneth", "Andreas", "Mikael", "Marie", "Betty", "Alexander", "Sofia", "Jonathan", "David", "Calle", "Ahmad", "Sebastian", "August"];
+    let usersSelect = users.map(function (user) {
         return `<option value="${user}">${user}</option>`;
     });
 
@@ -11,23 +11,23 @@ javascript:(function(){
     let kmom = document.getElementsByClassName("ellipsible")[3].innerHTML.toLowerCase().split(" ")[0];
 
     fetch('https://franklin.emilfolino.se/feedback/' + course + "/" + kmom)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(myJson) {
-        let textBefore = myJson.data.before;
-        let feedback = "Feedback: ";
-        let textAfter = myJson.data.after;
-        let workingDiv = document.createElement("div");
-        workingDiv.id = "feedbackArea";
-        workingDiv.style.position = "absolute";
-        workingDiv.style.top = "10px";
-        workingDiv.style.left = "500px";
-        workingDiv.style.zIndex = 10000;
-        workingDiv.style.width = "800px";
-        workingDiv.style.height = "250px";
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (myJson) {
+            let textBefore = myJson.data.before;
+            let feedback = "Feedback: ";
+            let textAfter = myJson.data.after;
+            let workingDiv = document.createElement("div");
+            workingDiv.id = "feedbackArea";
+            workingDiv.style.position = "absolute";
+            workingDiv.style.top = "10px";
+            workingDiv.style.left = "500px";
+            workingDiv.style.zIndex = 10000;
+            workingDiv.style.width = "800px";
+            workingDiv.style.height = "250px";
 
-        workingDiv.innerHTML += `<div style='background-color:#2C3539;color:#fff;border-bottom:1px solid orange;width:818px;font-size:18px;margin-bottom:0;text-align:center;display:block;'>Du rättar som: <span id='user'>" + myStorage.getItem("name") + "</span></div><textarea autofocus id='feedbackText' style='width:800px;height:200px;background-color:#2C3539;font-size:18px;color:#fff;margin-bottom:0;'></textarea>\
+            workingDiv.innerHTML += `<div style='background-color:#2C3539;color:#fff;border-bottom:1px solid orange;width:818px;font-size:18px;margin-bottom:0;text-align:center;display:block;'>Du rättar som: <span id='user'>" + myStorage.getItem("name") + "</span></div><textarea autofocus id='feedbackText' style='width:800px;height:200px;background-color:#2C3539;font-size:18px;color:#fff;margin-bottom:0;'></textarea>\
         <div style='background-color:#2C3539;width:808px;border-top:1px solid orange;padding:5px;'>\
         <button id='pressMePlease' style='height:40px;background:#eee;'>INSERT FEEDBACK</button>\
         <select id='preChoices'>\
@@ -67,34 +67,34 @@ javascript:(function(){
         ${usersSelect.join("\n")}\
         </select></div>`;
 
-        document.getElementsByTagName("body")[0].appendChild(workingDiv);
+            document.getElementsByTagName("body")[0].appendChild(workingDiv);
 
-        document.getElementById("names").addEventListener("change", function() {
-            if (document.getElementById("names").value != "") {
-                myStorage.setItem("name", document.getElementById("names").value);
-                document.getElementById("user").innerHTML = myStorage.getItem("name");
-            }
-        });
-        console.log(myStorage.getItem("name"));
-        document.getElementById("preChoices").addEventListener("change", function() {
-            if (document.getElementById("preChoices").value != "") {
-                document.getElementById("feedbackText").value += document.getElementById("preChoices").value;
-            }
-        });
+            document.getElementById("names").addEventListener("change", function () {
+                if (document.getElementById("names").value != "") {
+                    myStorage.setItem("name", document.getElementById("names").value);
+                    document.getElementById("user").innerHTML = myStorage.getItem("name");
+                }
+            });
+            console.log(myStorage.getItem("name"));
+            document.getElementById("preChoices").addEventListener("change", function () {
+                if (document.getElementById("preChoices").value != "") {
+                    document.getElementById("feedbackText").value += document.getElementById("preChoices").value;
+                }
+            });
 
-        document.getElementById("pressMePlease").addEventListener("click", function() {
-            if (users.indexOf(myStorage.getItem("name")) > -1) {
-                feedback += document.getElementById("feedbackText").value + "\n";
-                let content = textBefore + feedback + textAfter + myStorage.getItem("name");
-                navigator.clipboard.writeText(content);
-                box.textContent = content;
-                document.getElementsByTagName("body")[0].removeChild(workingDiv);
-            } else {
-                window.alert("Vem är det som rättar?");
-            }
+            document.getElementById("pressMePlease").addEventListener("click", function () {
+                if (users.indexOf(myStorage.getItem("name")) > -1) {
+                    feedback += document.getElementById("feedbackText").value + "\n";
+                    let content = textBefore + feedback + textAfter + myStorage.getItem("name");
+                    navigator.clipboard.writeText(content);
+                    box.textContent = content;
+                    document.getElementsByTagName("body")[0].removeChild(workingDiv);
+                } else {
+                    window.alert("Vem är det som rättar?");
+                }
 
+            });
         });
-    });
 
     console.log("Ready to serve.");
 })();
