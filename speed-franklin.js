@@ -1,7 +1,7 @@
-javascript:(function(){
+javascript: (function () {
     let myStorage = window.localStorage;
     let users = ["Kenneth", "Andreas", "Emil F", "Mikael", "Marie", "Simon", "Mathilda", "Malin", "Eddie", "Agnes", "John", "Alexander", "Vincent", "Wilhelm", "Emmie", "Emil G", "Milena"];
-    let usersSelect = users.map(function(user) {
+    let usersSelect = users.map(function (user) {
         return `<option value="${user}">${user}</option>`;
     });
 
@@ -10,27 +10,28 @@ javascript:(function(){
     let kmom = document.getElementById("assignment_url").children[0].textContent.toLowerCase().split(" ")[0];
 
     fetch('https://franklin.emilfolino.se/feedback/' + course + "/" + kmom)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(myJson) {
-        let textBefore = myJson.data.before;
-        let feedback = "Feedback: ";
-        let textAfter = myJson.data.after;
-        let workingDiv = document.createElement("div");
-        workingDiv.id = "feedbackArea";
-        workingDiv.style.position = "absolute";
-        workingDiv.style.top = "10px";
-        workingDiv.style.left = "500px";
-        workingDiv.style.zIndex = 10000;
-        workingDiv.style.width = "800px";
-        workingDiv.style.height = "250px";
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (myJson) {
+            let textBefore = myJson.data.before;
+            let feedback = "Feedback: ";
+            let textAfter = myJson.data.after;
+            let workingDiv = document.createElement("div");
+            workingDiv.id = "feedbackArea";
+            workingDiv.style.position = "absolute";
+            workingDiv.style.top = "10px";
+            workingDiv.style.left = "500px";
+            workingDiv.style.zIndex = 10000;
+            workingDiv.style.width = "800px";
+            workingDiv.style.height = "250px";
 
-        workingDiv.innerHTML += `<div style='background-color:#2C3539;color:#fff;border-bottom:1px solid orange;width:818px;font-size:18px;margin-bottom:0;text-align:center;display:block;'>Du rättar som: <span id='user'>" + myStorage.getItem("name") + "</span></div><textarea autofocus id='feedbackText' style='width:800px;height:200px;background-color:#2C3539;font-size:18px;color:#fff;margin-bottom:0;'></textarea>\
+            workingDiv.innerHTML += `<div style='background-color:#2C3539;color:#fff;border-bottom:1px solid orange;width:818px;font-size:18px;margin-bottom:0;text-align:center;display:block;'>Du rättar som: <span id='user'>" + myStorage.getItem("name") + "</span></div><textarea autofocus id='feedbackText' style='width:800px;height:200px;background-color:#2C3539;font-size:18px;color:#fff;margin-bottom:0;'></textarea>\
         <div style='background-color:#2C3539;width:808px;border-top:1px solid orange;padding:5px;'>\
         <button id='pressMePlease' style='height:40px;background:#eee;'>INSERT FEEDBACK</button>\
         <select id='preChoices'>\
         <option value=''>Välj någon feedback...</option>\
+        <option value='Din kod är tydlig och lättläst. Den är organiserad väl med uppdelning av input, uträkning och output.'>Tydlig och välstrukturerad kod</option>\
         <option value='Jag har gått igenom din inlämning och tittat på labben, sandboxen och din me-sida. Alla delarna fungerar fint och enligt kraven. Kör på med nästa moment!'>js1 01 (intro)</option>\
         <option value='Jag har testat de olika tangenbordsinmatningarna och allt ser bara bra ut. Din text är reflekterande och väl skriven. Kör så det ryker med nästa kursmoment!'>js1 05</option>\
         <option value='Jag har spelat ditt Hangman och det fungerar fint. Alla delarna är på plats och rätt metoder är publika. Mycket bra jobbat! Kämpa på nu och lycka till med projektet.'>js1 06</option>\
@@ -60,38 +61,38 @@ javascript:(function(){
         ${usersSelect.join("\n")}\
         </select></div>`;
 
-        document.getElementsByTagName("body")[0].prepend(workingDiv);
+            document.getElementsByTagName("body")[0].prepend(workingDiv);
 
-        document.getElementById("names").addEventListener("change", function() {
-            if (document.getElementById("names").value != "") {
-                myStorage.setItem("name", document.getElementById("names").value);
-                document.getElementById("user").innerHTML = myStorage.getItem("name");
-            }
+            document.getElementById("names").addEventListener("change", function () {
+                if (document.getElementById("names").value != "") {
+                    myStorage.setItem("name", document.getElementById("names").value);
+                    document.getElementById("user").innerHTML = myStorage.getItem("name");
+                }
+            });
+
+            document.getElementById("preChoices").addEventListener("change", function () {
+                if (document.getElementById("preChoices").value != "") {
+                    document.getElementById("feedbackText").value += document.getElementById("preChoices").value;
+                }
+            });
+
+            document.getElementById("pressMePlease").addEventListener("click", function () {
+                if (users.indexOf(myStorage.getItem("name")) > -1) {
+                    feedback += document.getElementById("feedbackText").value + "\n";
+
+                    let textToBeAdded = textBefore + feedback + textAfter + myStorage.getItem("name");
+
+                    box.textContent = textToBeAdded;
+                    box.value = textToBeAdded;
+                    box.style.height = "700px";
+
+                    document.getElementsByTagName("body")[0].removeChild(workingDiv);
+                } else {
+                    window.alert("Vem är det som rättar?");
+                }
+
+            });
         });
-
-        document.getElementById("preChoices").addEventListener("change", function() {
-            if (document.getElementById("preChoices").value != "") {
-                document.getElementById("feedbackText").value += document.getElementById("preChoices").value;
-            }
-        });
-
-        document.getElementById("pressMePlease").addEventListener("click", function() {
-            if (users.indexOf(myStorage.getItem("name")) > -1) {
-                feedback += document.getElementById("feedbackText").value + "\n";
-
-                let textToBeAdded = textBefore + feedback + textAfter + myStorage.getItem("name");
-
-                box.textContent = textToBeAdded;
-                box.value = textToBeAdded;
-                box.style.height = "700px";
-
-                document.getElementsByTagName("body")[0].removeChild(workingDiv);
-            } else {
-                window.alert("Vem är det som rättar?");
-            }
-
-        });
-    });
 
     console.log("Ready to serve.");
 })();
