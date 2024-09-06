@@ -32,6 +32,7 @@ javascript: (function () {
         <button id='pressMePlease' style='height:40px;background:#eee;'>INSERT FEEDBACK</button>\
         <select id='preChoices'>\
         <option value=''>Välj någon feedback...</option>\
+        <option value='Din kod är tydlig och lättläst. Den är organiserad väl med uppdelning av input, uträkning och output.'>Tydlig och välstrukturerad kod</option>\
         <option value='Jag har tittat på din inlämning och både skärmdumpen och loggfilen finns med och har korrekt innehåll och me-sidan fanns på plats. Bra jobbat med redovisningstexten. Kör så det ryker med nästa kursmoment.'>vlinux 01 (intro)</option>\
         <option value='Jag har gått igenom din inlämning och tittat på labben, sandboxen och din me-sida. Alla delarna fungerar fint och enligt kraven. Kör på med nästa moment!'>js1 01 (intro)</option>\
         <option value='Jag har testat de olika tangenbordsinmatningarna och allt ser bara bra ut. Din text är reflekterande och väl skriven. Kör så det ryker med nästa kursmoment!'>js1 05</option>\
