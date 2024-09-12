@@ -5,7 +5,10 @@ javascript: (function () {
         return `<option value="${user}">${user}</option>`;
     });
 
-    let box = document.getElementById("speed_grader_comment_textarea");
+
+    let iframe = document.getElementById('comment_rce_textarea_ifr');
+    let iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    let box = iframeDoc.getElementById("tinymce");
     let course = document.getElementById("context_title").textContent.toLowerCase().replace("/", "");
     let kmom = document.getElementById("assignment_url").children[0].textContent.toLowerCase().split(" ")[0];
 
