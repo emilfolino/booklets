@@ -29,7 +29,8 @@ javascript: (function () {
             workingDiv.style.width = "800px";
             workingDiv.style.height = "250px";
 
-            workingDiv.innerHTML += `<div style='background-color:#2C3539;color:#fff;border-bottom:1px solid orange;width:818px;font-size:18px;margin-bottom:0;text-align:center;display:block;'>Du rättar som: <span id='user'>" + myStorage.getItem("name") + "</span></div><textarea autofocus id='feedbackText' style='width:800px;height:200px;background-color:#2C3539;font-size:18px;color:#fff;margin-bottom:0;'></textarea>\
+            workingDiv.innerHTML += `
+            <div style='background-color:#2C3539;color:#fff;border-bottom:1px solid orange;width:818px;font-size:18px;margin-bottom:0;text-align:center;display:block;'><div style='display:inline-block'>Du rättar som: <span id='user'>" + myStorage.getItem("name") + "</span></div><button id='close-franklin' style='display:inline-block;float: right;margin-right: 10px;'>&#10006;</button><div><textarea autofocus id='feedbackText' style='width:800px;height:200px;background-color:#2C3539;font-size:18px;color:#fff;margin-bottom:0;'></textarea>\
         <div style='background-color:#2C3539;width:808px;border-top:1px solid orange;padding:5px;'>\
         <button id='pressMePlease' style='height:40px;background:#eee;'>INSERT FEEDBACK</button>\
         <select id='preChoices'>\
@@ -95,6 +96,11 @@ javascript: (function () {
                 }
 
             });
+
+            document.getElementById("close-franklin").addEventListener("click", function () {
+                document.getElementsByTagName("body")[0].removeChild(workingDiv);
+            });
+
         });
 
     console.log("Ready to serve.");
