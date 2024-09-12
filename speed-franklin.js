@@ -85,8 +85,8 @@ javascript: (function () {
 
                     let textToBeAdded = textBefore + feedback + textAfter + myStorage.getItem("name");
 
-                    box.textContent = textToBeAdded;
-                    box.value = textToBeAdded;
+                    window.parent.tinymce.activeEditor.focus();
+                    window.parent.tinymce.activeEditor.setContent(textToBeAdded.replace(/\n/g, "<br>"));
                     box.style.height = "700px";
 
                     document.getElementsByTagName("body")[0].removeChild(workingDiv);
