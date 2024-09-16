@@ -36,6 +36,8 @@ javascript: (function () {
         <select id='preChoices'>\
         <option value=''>Välj någon feedback...</option>\
         <option value='Din kod är tydlig och lättläst. Koden är organiserad väl med uppdelning av input, uträkning och output.'>Tydlig och välstrukturerad kod</option>\
+        <option value='Docstring kommentaren ska förklara vad koden i filen gör.'>Docstring förklara</option>\
+        <option value='I plane.py kan du skriva koden tydligare. Dela upp så du tar input från användaren för sig. Efter det gör du uträkningarna och sist gör alla utskrifter.'>Dela upp input, uträkning och output</option>\
         <option value='Jag har gått igenom din inlämning och tittat på labben, sandboxen och din me-sida. Alla delarna fungerar fint och enligt kraven. Kör på med nästa moment!'>js1 01 (intro)</option>\
         <option value='Jag har testat de olika tangenbordsinmatningarna och allt ser bara bra ut. Din text är reflekterande och väl skriven. Kör så det ryker med nästa kursmoment!'>js1 05</option>\
         <option value='Jag har spelat ditt Hangman och det fungerar fint. Alla delarna är på plats och rätt metoder är publika. Mycket bra jobbat! Kämpa på nu och lycka till med projektet.'>js1 06</option>\
